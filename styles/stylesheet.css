@@ -1,0 +1,56 @@
+@charset "utf-8";
+html, body {
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+header{
+    height: 150px;
+
+}
+
+nav {
+    width: 800px;
+    margin: 0 auto;
+    position: absolute;
+    top: 120px;
+}
+.menu {
+    width: 130px;
+    float: left;
+    padding: 5px;
+    height: 30px;
+}
+ul {
+    list-style: none;
+    margin: 0;
+}
+li{
+    list-style: none;
+    background-color: cadetblue;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.heading1{
+    text-shadow: 3px 2px lightblue;
+    height: 30px;
+    text-transform: uppercase;
+}
+footer {
+    background-color: black;
+    bottom: 0;
+    color: white;
+    font-size: 10px;
+    height: 25px;
+    line-height: 25px;
+    position: fixed;
+    text-align: right;
+    vertical-align: middle;
+    width: 100%;
+}
+footer p {
+    margin: 0 10px 0 0;
+}
