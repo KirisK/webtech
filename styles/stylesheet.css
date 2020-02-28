@@ -7,40 +7,38 @@ html, body {
 }
 header{
     height: 150px;
-
+    width: 100%;
+    background-image: url("/images/banner.jpg");
+}
+/* The navbar container */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
 }
 
-nav {
-    width: 800px;
-    margin: 0 auto;
-    position: absolute;
-    top: 120px;
-}
-.menu {
-    width: 130px;
+/* Navbar links */
+.topnav a {
     float: left;
-    padding: 5px;
-    height: 30px;
-}
-ul {
-    list-style: none;
-    margin: 0;
-}
-li{
-    list-style: none;
-    background-color: cadetblue;
-}
-a{
-    color: white;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
     text-decoration: none;
 }
+
+/* Links - change color on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
 .heading1{
     text-shadow: 3px 2px lightblue;
     height: 30px;
     text-transform: uppercase;
 }
 footer {
-    background-color: black;
+    background-color: cadetblue;
     bottom: 0;
     color: white;
     font-size: 10px;
