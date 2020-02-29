@@ -6,14 +6,18 @@ html, body {
     font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 }
 header{
-    height: 150px;
+    height: 240px;
     width: 100%;
-    background-image: url("/images/banner.jpg");
+}
+.banner{
+    width: 100%;
+    display: block;
+    height: 240px;
 }
 /* The navbar container */
 .topnav {
     overflow: hidden;
-    background-color: #333;
+    background-color: cadetblue;
 }
 
 /* Navbar links */
