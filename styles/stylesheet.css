@@ -46,6 +46,10 @@ header{
     height: 30px;
     text-transform: uppercase;
 }
+.heading1, p, form{
+    padding: 5px;
+    margin: 10px;
+}
 footer {
     background-color: #00B2EE;
     bottom: 0;
