@@ -1,23 +1,24 @@
 @charset "utf-8";
 html, body {
     box-sizing: border-box;
+    margin: 0;
     height: 100%;
     width: 100%;
     font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 }
 header{
-    height: 240px;
+    height: 255px;
     width: 100%;
 }
 .banner{
     width: 100%;
     display: block;
-    height: 240px;
+    height: 255px;
 }
 /* The navbar container */
 .topnav {
     overflow: hidden;
-    background-color: cadetblue;
+    background-color: #00B2EE;
 }
 
 /* Navbar links */
@@ -28,21 +29,25 @@ header{
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    border-right: 1.5px solid #1874CD;
+}
+.topnav a:last-child {
+    border-right: none;
 }
 
 /* Links - change color on hover */
 .topnav a:hover {
-    background-color: #ddd;
+    background-color: #00BFFF;
     color: black;
 }
 
 .heading1{
-    text-shadow: 3px 2px lightblue;
+    text-shadow: 3px 2px #00BFFF;
     height: 30px;
     text-transform: uppercase;
 }
 footer {
-    background-color: cadetblue;
+    background-color: #00B2EE;
     bottom: 0;
     color: white;
     font-size: 10px;
