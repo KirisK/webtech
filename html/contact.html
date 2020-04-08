@@ -10,6 +10,8 @@
     <img class="banner" src="../images/banner.jpg" alt="banner">
 </header>
 
+ <!-- Your links are really weird :P-->
+
 <div class="topnav">
     <a href="home.html?_ijt=88c49rui9mnfi0b87shpkua66e" style="width:17.5%">Home</a>
     <a href="link1.html?_ijt=5eka7fb121ok3bqbnqa52otqck" style="width:17.5%">Link1</a>
@@ -18,15 +20,16 @@
     <a href="contact.html?_ijt=2munarh10ialn594f11lh9j4pl" style="width:17%">Contacts</a>
 </div>
 <h1 class="heading1">Contact us</h1>
-<form>
-    <label for="fname">First name:</label><br>
-    <input type="text" id="fname" name="fname"><br>
-    <label for="lname">Last name:</label><br>
-    <input type="text" id="lname" name="lname"><br>
-    <label for="email">Enter your email:</label><br>
-    <input type="email" id="email" name="email"><br><br>
-    <input type="submit" value="Submit">
-</form>
+
+    <!-- Contact form works from here, gathers the required info then goes to the php function-->
+    <p>NOTE: Does not work yet, should show contactform php for now</p>
+    <form class="contact-form" action="../contactform.php" method="POST">
+        <input type="text" name="name" placeholder="Full Name">
+        <input type="text" name="mail" placeholder="Email">
+        <input type="text" name="subject" placeholder="Subject">
+        <textarea name="message" placeholder="Message"></textarea>
+        <button type="submit" name="submit">Send E-Mail</button>
+    </form>  
 <footer>
     <p>ICD0007 TeamProject</p>
 </footer>
