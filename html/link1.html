@@ -24,6 +24,9 @@
     Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed ornare condimentum pretium. Integer ipsum dolor, euismod commodo ullamcorper eu, congue varius dolor. Cras in neque auctor sapien pulvinar interdum. Duis fermentum pharetra dui ac porta. Fusce ultricies felis mollis, fringilla nulla vitae, pharetra erat. Etiam ullamcorper erat id felis porta laoreet. Nullam lobortis orci in ex posuere, non eleifend diam lacinia. Proin venenatis molestie nulla. Etiam pretium scelerisque est vel aliquet. Vivamus sagittis turpis consequat blandit egestas. Vestibulum in mi diam.<br /><br />
     Pellentesque maximus arcu vel neque sollicitudin, ut lobortis nisi malesuada. Suspendisse tempor iaculis ligula nec euismod. Ut vel varius dui. Suspendisse non pharetra ex. Maecenas tristique leo ut interdum ultricies. Cras non varius orci. Pellentesque auctor dignissim pharetra. Suspendisse potenti. Vestibulum sit amet libero et tortor tristique malesuada. Duis tempor porttitor ipsum sed aliquam. Phasellus id orci sit amet ex fringilla posuere. Nunc porta congue odio vitae interdum. Phasellus consectetur dapibus consequat. Donec magna diam, imperdiet placerat aliquet ut, suscipit id libero. Cras lobortis rutrum ex, sed pharetra magna efficitur eget. Etiam mauris ipsum, posuere sed aliquam at, viverra at orci.<br /><br /></p>
 
+
+<!--Could maybe use JS to hide the form untill you choose if you want insurance-->
+
 <form class="service-form" action="../service.php" method="POST">
     <p>Name</p> <input type="text" name="name">
     <p>Email</p> <input type="text" name="email">
@@ -40,9 +43,12 @@
         <option value="Life">Life Insurance</option>
     </select>
     <br />
-    <input type="submit" value="Send"><input type="reset" value="Clear">
+    <input type="submit" value="Send"><input type="reset" value="Reset">
 </form>
-<!--TODO: Fix the footer, so it wont block the send and clear buttons.-->
+<br />
+<br />
+
+<!--Fixxed the footer by adding two extra line breaks.-->
 
 <footer>
     <p>ICD0007 TeamProject</p>
