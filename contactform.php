@@ -17,18 +17,19 @@ if (isset($_POST['submit'])) {
     //mail function is nice, but will be commented out till we do MSQL.
     //mail($mailTo, $sub, $txt, $headers);
     
-    //Leads back to  homepage, should probably make a page or JS pop up for confirmation, for now it will do.
-    //TODO confirmation page
-    header("Location: html/home.html?_ijt=88c49rui9mnfi0b87shpkua66e");
-    
-     //This should write the previous mail into a text file as a backup.
+    //Leads back to  homepage, added a confirmation page that waits 5 seconds, or lets you click a link.
+    //echo("Thank you for your mail, you will now be redirected back to the homepage in 5 seconds.")
+    header("Location: html/redirect.html");
+    header("Refresh: 5, Location: html/home.html?_ijt=88c49rui9mnfi0b87shpkua66e");
 
+
+     //This should write the previous mail into a text file as a backup.
     $writeFile = fopen("mailbackups.txt", "a+") or die ("Oopsie, you broke the file");
 
 
-    fwrite($writeFile, "".$name."\n");
-    fwrite($writeFile, "".$sub."\n");
-    fwrite($writeFile, "".$txt."\n");
+    fwrite($writeFile, "Name: ".$name."\n");
+    fwrite($writeFile, "Mail Subject: ".$sub."\n");
+    fwrite($writeFile, "Content : ".$txt."\n");
     fwrite($writeFile, "".$headers."\n");
     fwrite($writeFile, "\n\n");
     fclose($writeFile);
