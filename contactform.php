@@ -21,7 +21,7 @@ if (isset($_POST['submit'])) {
     //Leads back to  homepage, added a confirmation page that waits 5 seconds, or lets you click a link.
     //echo("Thank you for your mail, you will now be redirected back to the homepage in 5 seconds.")
     header("Location: html/redirect.html");
-    header("Refresh: 5, Location: html/home.html?_ijt=88c49rui9mnfi0b87shpkua66e");
+    //header("Refresh: 5, Location: http://localhost/webtech/html/home.html?_ijt=88c49rui9mnfi0b87shpkua66e");
 
 
      //This should write the previous mail into a text file as a backup.
