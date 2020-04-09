@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Services</title>
     <link rel="stylesheet" href="../styles/stylesheet.css">
 </head>
 <body>
@@ -12,9 +13,9 @@
 
 <div class="topnav">
     <a href="home.html?_ijt=88c49rui9mnfi0b87shpkua66e" style="width:17.5%">Home</a>
-    <a href="link1.html?_ijt=5eka7fb121ok3bqbnqa52otqck" style="width:17.5%">Services</a>
-    <a href="link2.html?_ijt=5eka7fb121ok3bqbnqa52otqck" style="width:17.5%">Terms</a>
-    <a href="link3.html?_ijt=5eka7fb121ok3bqbnqa52otqck" style="width:17.5%">About IMS</a>
+    <a href="services.html?_ijt=5eka7fb121ok3bqbnqa52otqck" style="width:17%">Services</a>
+    <a href="terms.html?_ijt=5eka7fb121ok3bqbnqa52otqck" style="width:17.5%">Terms</a>
+    <a href="ims.html?_ijt=5eka7fb121ok3bqbnqa52otqck" style="width:17.5%">About IMS</a>
     <a href="contact.html?_ijt=2munarh10ialn594f11lh9j4pl" style="width:17%">Contacts</a>
 </div>
 <h1 class="heading1">Our Services</h1>
@@ -28,25 +29,30 @@
 <!--Could maybe use JS to hide the form untill you choose if you want insurance-->
 
 <form class="service-form" action="../service.php" method="POST">
-    <p>Name</p> <input type="text" name="name">
-    <p>Email</p> <input type="text" name="email">
-    <p>Phone</p> <input type="text" name="phone">
+    <label for="name">Name</label>
+    <input type="text" name="name" id="name" required><br><br>
+    <label for="email">Email </label>
+    <input type="email" name="email" id="email" required><br><br>
+    <label for="phone">Phone</label>
+    <input type="tel" name="phone" id="phone" required><br><br>
 
-    <p>What way would you like us to contact you?:</p>
-    Mail:<input type="checkbox" value="Mail" name="mail"><br />
-    Phone:<input type="checkbox" value="Phone" name="call"><br />
+    <label for="option">What way would you like us to contact you?</label><br>
+    Mail:<input type="checkbox" value="Mail" name="mail" id="option">
+    <label for="option1"></label>
+    Phone:<input type="checkbox" value="Phone" name="call" id="option1"><br><br>
 
-    <p>What type of insurance would you like?</p>
-    <select name="insurance" size="1">
-        <option value="Car">Car Insurance</option>
-        <option value="House">House Insurance</option>
-        <option value="Life">Life Insurance</option>
-    </select>
-    <br />
+    <label for="insurance">What type of insurance would you like?</label><br>
+    <input list="insurance_options" name="insurance" id="insurance" required placeholder="Choose option">
+    <datalist id="insurance_options">
+        <option value="Car Insurance">
+        <option value="House Insurance">
+        <option value="Life Insurance">
+    </datalist>
+    <br><br>
     <input type="submit" value="Send"><input type="reset" value="Reset">
 </form>
-<br />
-<br />
+<br><br>
+
 
 <!--Fixxed the footer by adding two extra line breaks.-->
 
