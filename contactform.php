@@ -1,6 +1,7 @@
 <?php
 
-//Logic behind the PHP form, its quite basic, asking for name, subject, mail address, and message
+//Logic behind the Contact form, its quite basic, asking for name, subject, mail address, and message
+//Mail function itself is currently commented out, but I did add a txt file that keeps a backup of all the messages.
 
 if (isset($_POST['submit'])) {
     $name = $_POST['name'];
