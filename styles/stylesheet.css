@@ -1,11 +1,23 @@
 @charset "utf-8";
+*{
+    margin: 0;
+    padding: 0;
+}
 html, body {
     box-sizing: border-box;
-    margin: 0;
+    /*margin: 0;*/
     height: 100%;
     width: 100%;
     font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 }
+#container{
+    min-height: 100%;
+}
+#main{
+    overflow: auto;
+    padding-bottom: 100px;
+}
+
 header{
     height: 255px;
     width: 100%;
@@ -16,12 +28,15 @@ header{
     height: 255px;
 }
 /* The navbar container */
+
 .topnav {
     overflow: hidden;
     background-color: #00B2EE;
 }
 
+
 /* Navbar links */
+
 .topnav a {
     float: left;
     display: block;
@@ -36,6 +51,7 @@ header{
 }
 
 /* Links - change color on hover */
+
 .topnav a:hover {
     background-color: #00BFFF;
     color: black;
@@ -50,18 +66,20 @@ header{
     padding: 5px;
     margin: 10px;
 }
-footer {
+
+#footer {
     background-color: #00B2EE;
-    bottom: 0;
     color: white;
-    font-size: 10px;
     height: 25px;
+    margin-top: -25px;
+    position: relative;
+    clear: both;
+    font-size: 15px;
     line-height: 25px;
-    position: fixed;
     text-align: right;
-    vertical-align: middle;
     width: 100%;
+
 }
-footer p {
+#footer p {
     margin: 0 10px 0 0;
 }

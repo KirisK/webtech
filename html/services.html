@@ -4,60 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Services</title>
-    <link rel="stylesheet" href="../styles/stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="../styles/stylesheet.css">
 </head>
 <body>
-<header>
-    <img class="banner" src="../images/banner.jpg" alt="banner">
-</header>
+<div id="container">
+    <div id="main">
+        <header>
+            <img class="banner" src="../images/banner.jpg" alt="banner">
+        </header>
 
-<div class="topnav">
-    <a href="home.html?_ijt=88c49rui9mnfi0b87shpkua66e" style="width:17.5%">Home</a>
-    <a href="services.html?_ijt=5eka7fb121ok3bqbnqa52otqck" style="width:17%">Services</a>
-    <a href="terms.html?_ijt=5eka7fb121ok3bqbnqa52otqck" style="width:17.5%">Terms</a>
-    <a href="ims.html?_ijt=5eka7fb121ok3bqbnqa52otqck" style="width:17.5%">About IMS</a>
-    <a href="contact.html?_ijt=2munarh10ialn594f11lh9j4pl" style="width:17%">Contacts</a>
+        <div class="topnav">
+            <a href="home.html?_ijt=88c49rui9mnfi0b87shpkua66e" style="width:17.5%">Home</a>
+            <a href="services.html?_ijt=5eka7fb121ok3bqbnqa52otqck" style="width:17%">Services</a>
+            <a href="terms.html?_ijt=5eka7fb121ok3bqbnqa52otqck" style="width:17.5%">Terms</a>
+            <a href="ims.html?_ijt=5eka7fb121ok3bqbnqa52otqck" style="width:17.5%">About IMS</a>
+            <a href="contact.html?_ijt=2munarh10ialn594f11lh9j4pl" style="width:17%">Contacts</a>
+        </div>
+        <h1 class="heading1">Our Services</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam viverra convallis est, vel congue ex malesuada nec. Fusce laoreet egestas ante non rhoncus. Nullam vitae lorem risus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nam sed ante nec neque sagittis consectetur ac at justo. Nam pharetra cursus diam eu feugiat. Donec dignissim dui id dui vehicula, a volutpat dui lobortis. Quisque eget convallis velit, nec posuere justo. Nulla consectetur bibendum hendrerit.<br /><br />
+            Integer feugiat tincidunt magna, ut auctor orci rhoncus ut. Donec at scelerisque lectus. Duis dapibus justo eget lacus fringilla, malesuada volutpat nunc volutpat. Duis aliquet, ante ut eleifend facilisis, purus diam vehicula odio, quis laoreet nulla tellus ut justo. Quisque imperdiet sapien vitae lectus imperdiet faucibus. Phasellus egestas mauris nec commodo tempus. Nulla facilisi. Pellentesque ut augue nunc. Ut suscipit lorem luctus interdum eleifend. Duis nisi est, venenatis vel ligula sit amet, pulvinar accumsan eros. Cras volutpat magna lectus, sit amet dignissim erat sagittis ut. Etiam augue risus, blandit eget auctor in, tristique vehicula arcu. In non tempor augue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec consequat ultricies tristique. Fusce laoreet lectus a sollicitudin faucibus.<br /><br />
+            Integer sed viverra odio, id laoreet erat. Sed vel accumsan ex. Duis sapien leo, pretium a ex ac, mattis volutpat sapien. Morbi dignissim venenatis bibendum. Etiam porta eleifend gravida. Curabitur vel purus et massa aliquet accumsan in hendrerit ipsum. Morbi commodo luctus arcu, nec egestas felis sollicitudin ultricies. Suspendisse nunc urna, placerat id lectus viverra, ultricies viverra dui. Morbi et rutrum odio. Donec diam nunc, tincidunt at leo sit amet, accumsan ullamcorper justo.<br /><br />
+            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed ornare condimentum pretium. Integer ipsum dolor, euismod commodo ullamcorper eu, congue varius dolor. Cras in neque auctor sapien pulvinar interdum. Duis fermentum pharetra dui ac porta. Fusce ultricies felis mollis, fringilla nulla vitae, pharetra erat. Etiam ullamcorper erat id felis porta laoreet. Nullam lobortis orci in ex posuere, non eleifend diam lacinia. Proin venenatis molestie nulla. Etiam pretium scelerisque est vel aliquet. Vivamus sagittis turpis consequat blandit egestas. Vestibulum in mi diam.<br /><br />
+            Pellentesque maximus arcu vel neque sollicitudin, ut lobortis nisi malesuada. Suspendisse tempor iaculis ligula nec euismod. Ut vel varius dui. Suspendisse non pharetra ex. Maecenas tristique leo ut interdum ultricies. Cras non varius orci. Pellentesque auctor dignissim pharetra. Suspendisse potenti. Vestibulum sit amet libero et tortor tristique malesuada. Duis tempor porttitor ipsum sed aliquam. Phasellus id orci sit amet ex fringilla posuere. Nunc porta congue odio vitae interdum. Phasellus consectetur dapibus consequat. Donec magna diam, imperdiet placerat aliquet ut, suscipit id libero. Cras lobortis rutrum ex, sed pharetra magna efficitur eget. Etiam mauris ipsum, posuere sed aliquam at, viverra at orci.<br /><br /></p>
+
+
+        <!--Could maybe use JS to hide the form untill you choose if you want insurance-->
+
+        <form class="service-form" action="../service.php" method="POST">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" required><br><br>
+            <label for="email">Email </label>
+            <input type="email" name="email" id="email" required><br><br>
+            <label for="phone">Phone</label>
+            <input type="tel" name="phone" id="phone" required><br><br>
+
+            <label for="option">What way would you like us to contact you?</label><br>
+            Mail:<input type="checkbox" value="Mail" name="mail" id="option">
+            <label for="option1"></label>
+            Phone:<input type="checkbox" value="Phone" name="call" id="option1"><br><br>
+
+            <label for="insurance">What type of insurance would you like?</label><br>
+            <input list="insurance_options" name="insurance" id="insurance" required placeholder="Choose option">
+            <datalist id="insurance_options">
+                <option value="Car Insurance">
+                <option value="House Insurance">
+                <option value="Life Insurance">
+            </datalist>
+            <br><br>
+            <button type="submit">Send</button>
+            <button type="reset">Reset</button>
+        </form>
+    </div>
 </div>
-<h1 class="heading1">Our Services</h1>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam viverra convallis est, vel congue ex malesuada nec. Fusce laoreet egestas ante non rhoncus. Nullam vitae lorem risus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nam sed ante nec neque sagittis consectetur ac at justo. Nam pharetra cursus diam eu feugiat. Donec dignissim dui id dui vehicula, a volutpat dui lobortis. Quisque eget convallis velit, nec posuere justo. Nulla consectetur bibendum hendrerit.<br /><br />
-    Integer feugiat tincidunt magna, ut auctor orci rhoncus ut. Donec at scelerisque lectus. Duis dapibus justo eget lacus fringilla, malesuada volutpat nunc volutpat. Duis aliquet, ante ut eleifend facilisis, purus diam vehicula odio, quis laoreet nulla tellus ut justo. Quisque imperdiet sapien vitae lectus imperdiet faucibus. Phasellus egestas mauris nec commodo tempus. Nulla facilisi. Pellentesque ut augue nunc. Ut suscipit lorem luctus interdum eleifend. Duis nisi est, venenatis vel ligula sit amet, pulvinar accumsan eros. Cras volutpat magna lectus, sit amet dignissim erat sagittis ut. Etiam augue risus, blandit eget auctor in, tristique vehicula arcu. In non tempor augue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec consequat ultricies tristique. Fusce laoreet lectus a sollicitudin faucibus.<br /><br />
-    Integer sed viverra odio, id laoreet erat. Sed vel accumsan ex. Duis sapien leo, pretium a ex ac, mattis volutpat sapien. Morbi dignissim venenatis bibendum. Etiam porta eleifend gravida. Curabitur vel purus et massa aliquet accumsan in hendrerit ipsum. Morbi commodo luctus arcu, nec egestas felis sollicitudin ultricies. Suspendisse nunc urna, placerat id lectus viverra, ultricies viverra dui. Morbi et rutrum odio. Donec diam nunc, tincidunt at leo sit amet, accumsan ullamcorper justo.<br /><br />
-    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed ornare condimentum pretium. Integer ipsum dolor, euismod commodo ullamcorper eu, congue varius dolor. Cras in neque auctor sapien pulvinar interdum. Duis fermentum pharetra dui ac porta. Fusce ultricies felis mollis, fringilla nulla vitae, pharetra erat. Etiam ullamcorper erat id felis porta laoreet. Nullam lobortis orci in ex posuere, non eleifend diam lacinia. Proin venenatis molestie nulla. Etiam pretium scelerisque est vel aliquet. Vivamus sagittis turpis consequat blandit egestas. Vestibulum in mi diam.<br /><br />
-    Pellentesque maximus arcu vel neque sollicitudin, ut lobortis nisi malesuada. Suspendisse tempor iaculis ligula nec euismod. Ut vel varius dui. Suspendisse non pharetra ex. Maecenas tristique leo ut interdum ultricies. Cras non varius orci. Pellentesque auctor dignissim pharetra. Suspendisse potenti. Vestibulum sit amet libero et tortor tristique malesuada. Duis tempor porttitor ipsum sed aliquam. Phasellus id orci sit amet ex fringilla posuere. Nunc porta congue odio vitae interdum. Phasellus consectetur dapibus consequat. Donec magna diam, imperdiet placerat aliquet ut, suscipit id libero. Cras lobortis rutrum ex, sed pharetra magna efficitur eget. Etiam mauris ipsum, posuere sed aliquam at, viverra at orci.<br /><br /></p>
-
-
-<!--Could maybe use JS to hide the form untill you choose if you want insurance-->
-
-<form class="service-form" action="../service.php" method="POST">
-    <label for="name">Name</label>
-    <input type="text" name="name" id="name" required><br><br>
-    <label for="email">Email </label>
-    <input type="email" name="email" id="email" required><br><br>
-    <label for="phone">Phone</label>
-    <input type="tel" name="phone" id="phone" required><br><br>
-
-    <label for="option">What way would you like us to contact you?</label><br>
-    Mail:<input type="checkbox" value="Mail" name="mail" id="option">
-    <label for="option1"></label>
-    Phone:<input type="checkbox" value="Phone" name="call" id="option1"><br><br>
-
-    <label for="insurance">What type of insurance would you like?</label><br>
-    <input list="insurance_options" name="insurance" id="insurance" required placeholder="Choose option">
-    <datalist id="insurance_options">
-        <option value="Car Insurance">
-        <option value="House Insurance">
-        <option value="Life Insurance">
-    </datalist>
-    <br><br>
-    <button type="submit">Send</button>
-    <button type="reset">Reset</button>
-</form>
-<br><br>
-
-
-<!--Fixxed the footer by adding two extra line breaks.-->
-
-<footer>
+<footer id="footer">
     <p>ICD0007 TeamProject</p>
 </footer>
 </body>
