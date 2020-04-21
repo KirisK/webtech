@@ -1,9 +1,12 @@
 <?php
-//This is old code I had left from last semester from another course, will be useful next week.
-define('DB_HOST', 'localhost');
-define('DB_USER', 'root');
-define('DB_PASSWORD', 'parool');
-define('DB_BASE', 'WT22');
+$servername = "anysql.itcollege.ee";
+$username = "root";
+$password = "xrD97scM2Q";
+$database = "WT22";
 
-
-$db = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_BASE);
+$mysql = new mysqli($servername, $username, $password, $database);
+if ($mysql->connect_errno){
+    die("Connection to Database failed :".$mysql->connect_errno);
+} else{
+    echo "Successfully connected to Database";
+}

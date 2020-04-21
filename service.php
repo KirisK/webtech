@@ -1,5 +1,6 @@
 <?php
-
+//include database connection data
+include_once "db.php";
 
 
 // for now the Service form just leads back to the homepage.

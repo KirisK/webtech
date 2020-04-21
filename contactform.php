@@ -1,4 +1,8 @@
 <?php
+//include database connection data
+include_once "db.php";
+
+
 
 //Logic behind the Contact form, its quite basic, asking for name, subject, mail address, and message
 //Mail function itself is currently commented out, but I did add a txt file that keeps a backup of all the messages.
