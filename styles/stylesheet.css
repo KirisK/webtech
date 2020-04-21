@@ -1,14 +1,18 @@
 @charset "utf-8";
+
 *{
     margin: 0;
     padding: 0;
-}
-html, body {
     box-sizing: border-box;
+}
+html, body,.label,p {
     /*margin: 0;*/
     height: 100%;
     width: 100%;
     font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+body{
+    margin: 0;
 }
 #container{
     min-height: 100%;
@@ -19,53 +23,53 @@ html, body {
 }
 
 header{
-    height: 255px;
-    width: 100%;
+    height: 260px;
 }
 .banner{
     width: 100%;
     display: block;
-    height: 255px;
+    height: 260px;
 }
-/* The navbar container */
+/* The navigation bar container */
 
 .topnav {
     overflow: hidden;
-    background-color: #00B2EE;
+    background-color: 	#00B2EE;
 }
 
-
-/* Navbar links */
+/* Navigation bar links */
 
 .topnav a {
+    font-family: Helvetica, Arial, sans-serif;
     float: left;
     display: block;
-    color: #f2f2f2;
+    color: #F0FFFF;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    border-right: 1.5px solid #1874CD;
+    border-right: 1.5px solid 	#1874CD;
+    width: 20%;
 }
 .topnav a:last-child {
     border-right: none;
 }
 
-/* Links - change color on hover */
-
+/* Links change color on hover */
 .topnav a:hover {
-    background-color: #00BFFF;
-    color: black;
+    background-color: #212121;
+    border-right: 1.5px solid white;
+
 }
 
 .heading1{
-    text-shadow: 3px 2px #00BFFF;
+    color: 	#333333;
+    text-shadow: 3px 2px lightgray;
     height: 30px;
     text-transform: uppercase;
-}
-.heading1, p, form{
     padding: 5px;
-    margin: 10px;
+    margin: 15px;
 }
+
 
 #footer {
     background-color: #00B2EE;
@@ -82,4 +86,110 @@ header{
 }
 #footer p {
     margin: 0 10px 0 0;
+}
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 15px;
+}
+p.column{
+    padding: 10px;
+    margin: 15px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+    .column {
+        width: 100%;
+    }
+}
+.contacttext, .homepagetext {
+    padding: 5px;
+    margin: 12px;
+}
+.service-form{
+    font-family: Helvetica, Arial, sans-serif;
+    text-align: center;
+    max-width:420px;
+    margin:50px auto;
+}
+/*Images*/
+.columnimg{
+    height: 300px;
+    width: 100%;
+}
+.application{
+    text-align: center;
+}
+.button{
+    width: 130px;
+    height: 50px;
+}
+.button1 {
+    width: 200px;
+    height: 60px;
+}
+.button,.button1{
+    background:	#212121;
+    border-radius:6px;
+    color:white;
+    font-size:20px;
+    padding:10px;
+    margin-top:-4px;
+    font-weight:700;
+}
+.contact-form{
+    max-width:420px;
+    margin:50px auto;
+}
+.input {
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight:500;
+    font-size: 18px;
+    border-radius: 6px;
+    line-height: 22px;
+    background-color: 	#E8E8E8;
+    border:2px solid #212121;
+    padding: 13px;
+    margin-bottom: 15px;
+    width:100%;
+}
+
+textarea {
+    height: 150px;
+    line-height: 150%;
+    resize:vertical;
+}
+/* Buttons change color on hover */
+.button:hover,.button1:hover {
+    background:#00B2EE;
+    color: #212121;
+}
+
+
+/* Left and right column */
+.column.left {
+    width: 40%;
+}
+
+/* Middle column */
+.column.right {
+    width: 60%;
+}
+.image{
+    height: 300px;
+    width: 100%;
+}
+h3{
+    color: 	#3A5FCD;
+}
+h3:before {
+    content: ' \22C7';
 }

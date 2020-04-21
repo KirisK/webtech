@@ -15,26 +15,26 @@
 
 
         <div class="topnav">
-            <a href="home.html?_ijt=88c49rui9mnfi0b87shpkua66e" style="width:17.5%">Home</a>
-            <a href="services.html?_ijt=5eka7fb121ok3bqbnqa52otqck" style="width:17%">Services</a>
-            <a href="terms.html?_ijt=5eka7fb121ok3bqbnqa52otqck" style="width:17.5%">Terms</a>
-            <a href="ims.html?_ijt=5eka7fb121ok3bqbnqa52otqck" style="width:17%">About IMS</a>
-            <a href="contact.html?_ijt=2munarh10ialn594f11lh9j4pl" style="width:17%">Contacts</a>
+            <a href="home.html?_ijt=88c49rui9mnfi0b87shpkua66e">Home</a>
+            <a href="services.html?_ijt=5eka7fb121ok3bqbnqa52otqck">Services</a>
+            <a href="terms.html?_ijt=5eka7fb121ok3bqbnqa52otqck">Terms</a>
+            <a href="ims.html?_ijt=5eka7fb121ok3bqbnqa52otqck">About IMS</a>
+            <a href="contact.html?_ijt=2munarh10ialn594f11lh9j4pl">Contacts</a>
         </div>
         <h1 class="heading1">Contact us</h1>
 
         <!-- Contact form works from here, gathers the required info then goes to the contactform.php function-->
-        <p>Please contact us if you wish to let us know of any issues!</p>
+        <p class="contacttext">Please contact us if you wish to let us know of any issues!</p>
         <form class="contact-form" action="../contactform.php" method="POST"><br />
             <label for="name"></label>
-            <input type="text" name="name" id="name" placeholder="Full Name"><br />
+            <input class="input" type="text" name="name" id="name" placeholder="Full Name" required><br />
             <label for="mail"></label>
-            <input type="text" name="mail" id="mail" placeholder="Email"><br />
+            <input class="input" type="email" name="mail" id="mail" placeholder="Email" required><br />
             <label for="subject"></label>
-            <input type="text" name="subject" id="subject" placeholder="Subject"><br />
+            <input class="input" type="text" name="subject" id="subject" placeholder="Subject" required><br />
             <label for="message"></label>
-            <textarea name="message" id="message" placeholder="Message"></textarea><br />
-            <button type="submit" name="submit">Send E-Mail</button><br />
+            <textarea class="input" name="message" id="message" placeholder="Message" required></textarea><br />
+            <button class="button1" type="submit" name="submit">Send E-Mail</button><br />
         </form>
         <!-- TODO, Add validation checking, right now were literally an open book to anyone looking to break the page.-->
 
