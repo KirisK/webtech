@@ -1,4 +1,5 @@
 <?php
+/*$servername = "localhost";*/
 $servername = "anysql.itcollege.ee";
 $username = "root";
 $password = "xrD97scM2Q";
