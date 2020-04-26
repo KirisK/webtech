@@ -48,7 +48,7 @@ header{
     padding: 14px 16px;
     text-decoration: none;
     border-right: 1.5px solid 	#1874CD;
-    width: 16.66%;
+    width: 14.2857%;
 }
 .topnav a:last-child {
     border-right: none;
@@ -150,6 +150,10 @@ p.column{
     margin:50px auto;
 }
 .login{
+    max-width:420px;
+    margin:50px auto;
+}
+.singup{
     max-width:420px;
     margin:50px auto;
 }

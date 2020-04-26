@@ -14,7 +14,7 @@ if(isset($_POST['login'])){
         echo "Name = ", $_SESSION['name'], "<br>", " Age = ", $_SESSION['location'], "<br>";
     } else {
         echo '<p>Pin is incorrect</p>';
-        echo '<form action="html/login.html" method="POST" id="session">
+        echo '<form action="html/login.php" method="POST" id="session">
                <input type="submit" value="Try again" name="try again">';
     }
 }  else {
