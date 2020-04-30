@@ -1,3 +1,6 @@
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -50,7 +53,19 @@
         </div>
         <!--Could maybe use JS to hide the form untill you choose if you want insurance-->
 
-        <form class="service-form" action="../service.php" method="POST">
+        <script>
+            function hidden() {
+                var x = document.getElementById("hiddenform");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+            x.style.display = "none";
+                }
+            }
+
+        </script>
+
+        <form id="hiddenform" class="service-form" action="../service.php" method="POST">
             <label for="name"></label>
             <input class="input" type="text" name="name" id="name" placeholder="Full Name" required><br><br>
             <label for="email"></label>

@@ -1,6 +1,6 @@
 <?php
 
-include('db.php');
+include('../db.php');
 session_start();
 
 if (isset($_POST['register'])) {
@@ -15,7 +15,9 @@ if (isset($_POST['register'])) {
     $query->execute();
 
     if ($query->rowCount() > 0) {
-        echo '<p class="error">The email address is already registered!</p>';
+        echo '<p class="error">This email is already in use! Returning to registration</p>';
+        sleep(5);
+        header("Location: registration.php");
     }
 
     if ($query->rowCount() == 0) {
@@ -28,7 +30,7 @@ if (isset($_POST['register'])) {
         if ($result) {
             echo '<p class="success">Your registration was successful!</p>';
         } else {
-            echo '<p class="error">Something went wrong!</p>';
+            echo '<p class="error">You broke something, good job!</p>';
         }
     }
 }
